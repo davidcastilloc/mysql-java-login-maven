@@ -10,7 +10,7 @@ public class ConectorMariadb {
 		try {
 			Class.forName ("org.mariadb.jdbc.Driver");
 			con = (Connection) DriverManager.getConnection(""
-					+ "jdbc:mariadb://localhost:3306/login?user=root&password=root"
+					+ "jdbc:mariadb://localhost:3306/login?user=root"
 					+ "");
 		} catch (SQLException | ClassNotFoundException e) {
 			// TODO Auto-generated catch block

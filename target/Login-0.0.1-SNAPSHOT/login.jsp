@@ -4,12 +4,10 @@
 <%
 boolean status = LoginDao.validate(obj);
 if (status) {
-%>
-
-<%	out.println("<h1>Bienvenido</h1>");
+	out.println("Bienvenido al sistema");
 	session.setAttribute("session", "TRUE");
 } else {
-	out.print("<h3>Usuario o Contraseña incorrectos</h3>");
+	out.print("<h1>Usuario o password incorrectos</h1>");
 %>
 <jsp:include page="index.jsp"></jsp:include>
 <%
